@@ -1,0 +1,6 @@
+[user]
+	name = name
+	email = email
+[github]
+	user = blovett
+	token = !security 2>&1 >/dev/null find-generic-password -gs \"GitHub API Token\" | ruby -e 'print $1 if STDIN.gets =~ /^password: \\\"(.*)\\\"$/'
