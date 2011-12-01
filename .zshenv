@@ -18,3 +18,5 @@ export AWS_CREDENTIAL_FILE=~/aws-stuff/account-key
 path=($HOME/bin /usr/local/bin /usr/local/sbin /bin /usr/bin /sbin /usr/sbin)
 path=($path  $AWS_IAM_HOME/bin $AWS_ELB_HOME/.bin $EC2_HOME/bin)
 typeset -u path
+
+source ~/.zshenv_private
