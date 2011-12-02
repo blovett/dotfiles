@@ -187,6 +187,9 @@ auto_view text/html application/msword                    # html with lynx,
 # but that doesn't mean i don't like text/plain
 alternative_order text/plain text/html
 
+# query lbdb for addresses.
+set query_command="/usr/local/bin/lbdbq '%s'"
+
 # things to load in
-source ~/.mutt/current.profile                                 # mailboxes, etc.
+source ~/.mutt/profiles/active.profile                    # mailboxes, etc.
 source $alias_file                                        # people i know
