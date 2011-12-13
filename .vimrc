@@ -29,7 +29,10 @@ set viminfo=					" annoying!
 
 set t_Co=256					" use all 256 colors
 syntax on					" and enable syntax highlighting
-colorscheme jcs					" and load my colors
+"colorscheme jcs					" and load my colors
+colorscheme ambient
+"colorscheme abbott
+"colorscheme calmbreeze
 
 " don't pollute directories with swap files, keep them in one place
 silent !mkdir -p ~/.vim/{backup,swp}/
@@ -65,6 +68,9 @@ au FileType mail set tw=68 et spell spelllang=en_us
 
 " commit messages are like email
 au FileType cvs,gitcommit set tw=68 et
+
+" cisco acls
+au BufNewFile,BufRead *.acl set ft=ciscoacl
 
 " and make sure there's a blank line for me to start typing (openbsd's cvs does
 " this by default)
