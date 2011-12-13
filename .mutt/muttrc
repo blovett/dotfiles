@@ -10,7 +10,6 @@
 set ascii_chars=yes                             # looks better
 set alias_file=~/.mutt/aliases                # good place, yeah?
 set attach_format="%u%D%I %t%2n %T%.20d  %> [%.7m/%.10M, %.6e%?C?, %C?, %s]                               "
-unset attribution                               # you know what you wrote
 set confirmappend=no                            # append without asking
 set connect_timeout=3                           # die quickly when i move
 set delete=yes                                  # don't ask me dammit
