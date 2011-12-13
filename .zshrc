@@ -18,6 +18,7 @@ alias rm='rm -i'
 alias grep=egrep
 alias ls='ls -F'
 alias sha256='openssl dgst -sha256'
+alias mutt="~/.mutt/bin/select_profile.sh; /usr/local/bin/mutt"
 
 # automatically remove duplicates from these arrays
 typeset -U path cdpath fpath manpath
