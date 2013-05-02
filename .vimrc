@@ -129,4 +129,7 @@ abbr eachother each other
 cabbr W w
 cabbr Q q
 
+" enable pathogen
+execute pathogen#infect()
+
 " :w !sudo tee % 
