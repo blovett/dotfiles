@@ -30,9 +30,10 @@ set viminfo=					" annoying!
 set t_Co=256					" use all 256 colors
 syntax on					" and enable syntax highlighting
 "colorscheme jcs					" and load my colors
-colorscheme ambient
+"colorscheme ambient
 "colorscheme abbott
 "colorscheme calmbreeze
+colorscheme Tomorrow-Night-Bright
 
 " don't pollute directories with swap files, keep them in one place
 silent !mkdir -p ~/.vim/{backup,swp}/
@@ -52,8 +53,11 @@ au BufNewFile,BufRead *.pjs set ft=php.javascript
 
 au BufNewFile,BufRead notaweblog* set ft=html
 
+au BufNewFile,BufRead *.clj set ft=clojure
+
 " ruby - what tabs?
-au FileType ruby,eruby set ts=2 sw=2 tw=79 et sts=2 autoindent
+"au FileType ruby,eruby set ts=2 sw=2 tw=79 et sts=2 autoindent
+au FileType ruby set ts=2 sw=2 tw=79 et sts=2 autoindent
 " and your yaml
 au FileType yaml set ts=2 sw=2 et
 
