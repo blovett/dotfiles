@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+# dot
+#
+# `dot` handles installation, updates, things like that. Run it periodically
+# to make sure you're on the latest and greatest.
+
+# Set OS X defaults
+if [ -x $ZSH/osx/set-defaults.sh ]; then
+	$ZSH/osx/set-defaults.sh
+fi
+
+# Upgrade homebrew
+brew update
+
+# Install homebrew packages
+if [ -x $ZSH/homebrew/install.sh ]; then
+	$ZSH/homebrew/install.sh 2>&1
+fi

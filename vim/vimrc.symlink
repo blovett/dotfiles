@@ -3,6 +3,8 @@
 " vim 7 config " joshua stein <jcs@jcs.org>
 "
 
+"set runtimepath=~/.dotfiles/vim,$VIM,$VIMRUNTIME
+
 " defaults for everything
 let c_minlines=500
 set backspace=indent,eol,start
