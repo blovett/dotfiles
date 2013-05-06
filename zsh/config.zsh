@@ -39,10 +39,6 @@ setopt complete_aliases
 
 zle -N newtab
 
-bindkey '^[^[[D' backward-word
-bindkey '^[^[[C' forward-word
-bindkey '^[[5D' beginning-of-line
-bindkey '^[[5C' end-of-line
-bindkey '^[[3~' delete-char
-bindkey '^[^N' newtab
-bindkey '^?' backward-delete-char
+bindkey -e				# emacs key bindings
+bindkey ' '	magic-space		# do history expansion on space.
+bindkey '^I'	complete-word		# completion on tab. leave expansion to _expand
