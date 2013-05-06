@@ -7,6 +7,12 @@
 #
 # Run ./set-defaults.sh and you'll be good to go.
 
+OS=$(uname -n)
+if [ "$OS" != "Darwin" ]; then
+	echo "not supported on $OS"
+	exit 0
+fi
+
 # Ask for the administrator password upfront
 sudo -v
 
