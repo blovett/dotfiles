@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Sets reasonable OS X defaults.
 #
 # Or, in other words, set shit how I like in OS X.
@@ -13,6 +15,8 @@ if [ "$OS" != "Darwin" ]; then
 	exit 0
 fi
 
+VERSION_minor=$(sw_vers -productVersion | cut -d. -f2)
+
 # Ask for the administrator password upfront
 sudo -v
 
@@ -24,8 +28,12 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Menu bar: show remaining battery time (on pre-10.8); hide percentage
-defaults write com.apple.menuextra.battery ShowPercent -string "NO"
-defaults write com.apple.menuextra.battery ShowTime -string "YES"
+if [ $VERSION_minor -ge 8 ]; then
+	defaults write com.apple.menuextra.battery ShowPercent -string "NO"
+	defaults write com.apple.menuextra.battery ShowTime -string "YES"
+else
+	defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+fi
 
 # Automatically quit printer app once the print jobs complete
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
@@ -189,4 +197,3 @@ for app in "Address Book" "Calendar" "Contacts" "Dashboard" "Dock" "Finder" \
 	killall "$app" > /dev/null 2>&1
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
-
