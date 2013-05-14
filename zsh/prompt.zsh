@@ -76,12 +76,12 @@ todo(){
 }
 
 if [ -n "$SSH_CONNECTION" ]; then
-	PROMPT='%m %55<...<%~ $(prompt_char)%# '
+	PROMPT='%m %55<...<%~ $(vc_prompt_char)%# '
 else
-	PROMPT='%55<...<%~ $(prompt_char)%# '
+	PROMPT='%55<...<%~ $(vc_prompt_char)%# '
 fi
 
-function prompt_char() {
+function vc_prompt_char() {
 	git branch >/dev/null 2>/dev/null && echo '± ' && return
 	svn info >/dev/null 2>/dev/null && echo 'δ ' && return
 	#echo '○'
