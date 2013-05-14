@@ -89,7 +89,23 @@ function prompt_char() {
 }
 
 function battery_charge() {
-	echo `${ZSH}/bin/batcharge.py`
+	bclrf=/tmp/batcharge-last-run-$$
+
+	[ ! -f $bclrf ] && date +%s > $bclrf
+	LAST_RUN_TIME=$(< $bclrf)
+
+	NOW=$(date +%s)
+	DELTA=$(( $NOW - $LAST_RUN_TIME ))
+
+	bcrf=/tmp/batcharge_results-$$
+	if [ ! -f $bcrf ]; then
+		$ZSH/bin/batcharge.py > $bcrf
+	elif [ $DELTA -ge 120 ]; then
+		$ZSH/bin/batcharge.py > $bcrf
+		date +%s > $bclrf
+	fi
+
+	echo $(<$bcrf)
 }
 
 OS=$(uname -s)
@@ -97,11 +113,6 @@ if [ x"$OS" = x"Darwin" ]
 then
 	export RPROMPT='$(battery_charge)'
 fi
-
-
-set_prompt () {
-  export RPROMPT="%{$fg_bold[cyan]%}$(todo)%{$reset_color%}"
-}
 
 precmd() {
   title "zsh" "%m" "%55<...<%~"
