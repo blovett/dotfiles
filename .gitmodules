@@ -1,3 +1,6 @@
 [submodule "vim/vim.symlink/bundle/sensible"]
 	path = vim/vim.symlink/bundle/sensible
 	url = git@github.com:tpope/vim-sensible.git
+[submodule "vim/vim.symlink/bundle/sleuth"]
+	path = vim/vim.symlink/bundle/sleuth
+	url = git://github.com/tpope/vim-sleuth.git
