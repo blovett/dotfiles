@@ -40,6 +40,7 @@ syntax on					" and enable syntax highlighting
 "colorscheme abbott
 "colorscheme calmbreeze
 colorscheme Tomorrow-Night-Bright
+colorscheme Tomorrow-Night-Eighties
 
 " don't pollute directories with swap files, keep them in one place
 silent !mkdir -p ~/.vim/{backup,swp}/
