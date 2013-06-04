@@ -76,9 +76,9 @@ todo(){
 }
 
 if [ -n "$SSH_CONNECTION" ]; then
-	PROMPT='%m %55<...<%~ $(vc_prompt_char)%# '
+  PROMPT='%m %55<...<%~$(git_dirty)$(need_push)$(vc_prompt_char)%# '
 else
-	PROMPT='%55<...<%~ $(vc_prompt_char)%# '
+  PROMPT='%55<...<%~$(git_dirty)$(need_push)$(vc_prompt_char)%# '
 fi
 
 function vc_prompt_char() {
