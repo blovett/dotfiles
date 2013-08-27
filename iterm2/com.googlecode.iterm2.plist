@@ -270,7 +270,7 @@
 	<key>HighlightTabLabels</key>
 	<true/>
 	<key>HotKeyBookmark</key>
-	<string>C6A0167B-C28C-40B8-BF25-4BD2454DAFCD</string>
+	<string>AD4A2FAF-C669-4239-847D-B4125789F4FA</string>
 	<key>HotKeyTogglesWindow</key>
 	<false/>
 	<key>Hotkey</key>
@@ -293,6 +293,8 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
+	<key>NSFontPanelAttributes</key>
+	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/.dotfiles/iterm2</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -312,63 +314,48 @@
 		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
 		hAErATGG
 		</data>
-		<string>198</string>
+		<string>319</string>
 	</array>
 	<key>NSTableView Hidden Columns KeyBingingTable</key>
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
-	<key>NSToolbar Configuration Terminal Toolbar</key>
-	<dict>
-		<key>TB Display Mode</key>
-		<integer>1</integer>
-		<key>TB Icon Size Mode</key>
-		<integer>1</integer>
-		<key>TB Is Shown</key>
-		<integer>0</integer>
-		<key>TB Size Mode</key>
-		<integer>1</integer>
-	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>929 91 445 270 0 0 1440 878 </string>
+	<string>835 77 445 270 0 0 1280 698 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>139 235 924 485 0 0 1440 878 </string>
+	<string>0 137 924 485 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1 452 650 426 0 0 1440 878 </string>
+	<string>87 65 1346 810 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>424 143 650 426 0 0 1440 878 </string>
+	<string>87 443 1042 426 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
-	<string>129 32 986 570 0 0 1440 878 </string>
+	<string>372 352 570 376 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 11</key>
-	<string>1152 560 650 426 0 0 1920 1058 </string>
+	<string>393 329 570 376 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 12</key>
-	<string>1265 226 570 376 0 0 1920 1058 </string>
+	<string>414 306 570 376 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 13</key>
-	<string>345 401 570 376 0 0 1920 1058 </string>
+	<string>435 283 570 376 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 14</key>
-	<string>645 53 570 376 0 0 1920 1058 </string>
+	<string>456 260 570 376 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 15</key>
-	<string>666 30 570 376 0 0 1920 1058 </string>
-	<key>NSWindow Frame iTerm Window 16</key>
-	<string>545 138 570 376 0 0 1920 1058 </string>
-	<key>NSWindow Frame iTerm Window 17</key>
-	<string>980 645 570 376 0 0 1920 1058 </string>
+	<string>477 237 570 376 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>717 536 650 426 0 0 1920 1058 </string>
+	<string>448 274 650 426 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>493 422 650 426 0 0 1440 878 </string>
+	<string>674 386 650 426 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>0 372 1082 506 0 0 1440 878 </string>
+	<string>246 490 570 376 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
-	<string>566 84 650 426 0 0 1440 878 </string>
+	<string>267 467 570 376 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
-	<string>634 96 650 426 0 0 1440 878 </string>
+	<string>288 444 570 376 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 7</key>
-	<string>992 624 650 426 0 0 1920 1058 </string>
+	<string>309 421 570 376 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 8</key>
-	<string>243 425 650 426 0 0 1920 1058 </string>
+	<string>330 398 570 376 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 9</key>
-	<string>119 0 650 426 0 0 1440 878 </string>
+	<string>351 375 570 376 0 0 1440 878 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1890,7 +1877,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/blovett/.dotfiles/iterm2</string>
+	<string>/Users/ben/.dotfiles/iterm2</string>
 	<key>PromptOnClose</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -1908,7 +1895,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-06-04T19:58:42Z</date>
+	<date>2013-08-24T04:26:01Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
