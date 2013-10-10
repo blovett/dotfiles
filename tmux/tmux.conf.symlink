@@ -2,4 +2,3 @@ set -g prefix C-a
 bind-key C-a last-window
 bind-key C-c new-window
 bind-key C-d detach-client
-#bind-key D detach-client \; lock-server
