@@ -9,7 +9,7 @@
 #
 # Run ./set-defaults.sh and you'll be good to go.
 
-OS=$(uname -n)
+OS=$(uname -s)
 if [ "$OS" != "Darwin" ]; then
 	echo "not supported on $OS"
 	exit 0
