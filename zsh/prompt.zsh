@@ -108,11 +108,11 @@ function battery_charge() {
 	echo $(<$bcrf)
 }
 
-OS=$(uname -s)
-if [ x"$OS" = x"Darwin" ]
-then
-	export RPROMPT='$(battery_charge)'
-fi
+#OS=$(uname -s)
+#if [ x"$OS" = x"Darwin" ]
+#then
+#	export RPROMPT='$(battery_charge)'
+#fi
 
 precmd() {
   title "zsh" "%m" "%55<...<%~"
