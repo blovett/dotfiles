@@ -4,3 +4,6 @@
 [submodule "vim/vim.symlink/bundle/numbertoggle"]
 	path = vim/vim.symlink/bundle/numbertoggle
 	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle.git
+[submodule "vim/vim.symlink/bundle/ledger"]
+	path = vim/vim.symlink/bundle/ledger
+	url = git@github.com:ledger/vim-ledger.git
