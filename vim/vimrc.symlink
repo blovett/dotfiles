@@ -77,6 +77,9 @@ au FileType make,c,cpp,objc set ts=8 sw=8
 " email - expand tabs, wrap at 68 for future quoting, enable spelling
 au FileType mail set tw=68 et spell spelllang=en_us
 
+" shell - expand tabs
+au FileType sh set expandtab autoindent textwidth=79 shiftwidth=4 tabstop=4
+
 " perl - expand tabs
 au FileType perl set expandtab autoindent textwidth=79 shiftwidth=4 tabstop=4
 
