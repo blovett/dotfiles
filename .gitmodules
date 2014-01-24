@@ -7,3 +7,6 @@
 [submodule "vim/vim.symlink/bundle/ledger"]
 	path = vim/vim.symlink/bundle/ledger
 	url = git@github.com:ledger/vim-ledger.git
+[submodule "vim/vim.symlink/bundle/vim-colors-pencil"]
+	path = vim/vim.symlink/bundle/vim-colors-pencil
+	url = https://github.com/reedes/vim-colors-pencil.git
