@@ -39,8 +39,8 @@ syntax on					" and enable syntax highlighting
 "colorscheme ambient
 "colorscheme abbott
 "colorscheme calmbreeze
-colorscheme Tomorrow-Night-Bright
-colorscheme Tomorrow-Night-Eighties
+"colorscheme Tomorrow-Night-Bright
+"colorscheme Tomorrow-Night-Eighties
 
 " don't pollute directories with swap files, keep them in one place
 silent !mkdir -p ~/.vim/{backup,swp}/
@@ -140,5 +140,8 @@ cabbr Q q
 
 " enable pathogen
 execute pathogen#infect()
+
+colorscheme pencil
+set background=dark
 
 " :w !sudo tee % 
