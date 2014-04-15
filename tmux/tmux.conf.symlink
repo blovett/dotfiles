@@ -2,3 +2,31 @@ set -g prefix C-a
 bind-key C-a last-window
 bind-key C-c new-window
 bind-key C-d detach-client
+
+# increase history
+set -g history-limit 100000
+
+# disable watching
+setw -g monitor-activity off
+set -g visual-activity off
+
+# reload conf
+bind-key r source-file ~/.tmux.conf\; display "Reloaded!"
+
+# window splitting
+bind-key | split-window -h
+bind-key - split-window -v
+# window pane selection
+bind-key h select-pane -L
+bind-key j select-pane -D
+bind-key k select-pane -U
+bind-key l select-pane -R
+# window pane resizing
+bind-key -r H resize-pane -L 5
+bind-key -r J resize-pane -D 5
+bind-key -r K resize-pane -U 5
+bind-key -r L resize-pane -R
+
+# titles
+#set -g set-titles on
+#set -g set-titles-string '[#S:#I #H] #W' # use screen title
