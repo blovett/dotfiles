@@ -1,3 +1,3 @@
 export PAGER=less
-export LESS="-cex3M"
+export LESS="-cex3Mr"
 export EDITOR=vim
