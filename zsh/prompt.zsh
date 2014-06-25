@@ -14,23 +14,19 @@ git_branch() {
 }
 
 git_dirty() {
-  st=$($git status 2>/dev/null | tail -n 1)
-  if [[ $st == "" ]]
-  then
-    echo ""
-  else
-    if [[ "$st" =~ ^nothing ]]
-    then
-      echo " on %{$fg_bold[green]%}$(git_prompt_info)%{$reset_color%}"
-    else
-      echo " on %{$fg_bold[red]%}$(git_prompt_info)%{$reset_color%}"
-    fi
-  fi
+	if $( ! $git status -s &>/dev/null); then
+		echo ""
+	else
+		if [[ $( $git status --porcelain --untracked-files=no ) == "" ]]; then
+			echo " on %{$fg_bold[green]%}$(git_prompt_info)%{$reset_color%}"
+		else
+			echo " on %{$fg_bold[red]%}$(git_prompt_info)%{$reset_color%}"
+		fi
+	fi
 }
 
 git_prompt_info () {
  ref=$($git symbolic-ref HEAD 2>/dev/null) || return
-# echo "(%{\e[0;33m%}${ref#refs/heads/}%{\e[0m%})"
  echo "${ref#refs/heads/}"
 }
 
@@ -75,10 +71,9 @@ todo(){
   fi
 }
 
+PROMPT='%55<...<%~$(git_dirty)$(need_push)$(vc_prompt_char)%# '
 if [ -n "$SSH_CONNECTION" ]; then
-  PROMPT='%m %55<...<%~$(git_dirty)$(need_push)$(vc_prompt_char)%# '
-else
-  PROMPT='%55<...<%~$(git_dirty)$(need_push)$(vc_prompt_char)%# '
+  PROMPT='%m ${PROMPT}'
 fi
 
 function vc_prompt_char() {
