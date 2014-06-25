@@ -13,3 +13,6 @@
 [submodule "git/git-cascade"]
 	path = git/git-cascade
 	url = https://github.com/cool-RR/git-cascade.git
+[submodule "vim/vim.symlink/bundle/vim-rust"]
+	path = vim/vim.symlink/bundle/vim-rust
+	url = https://github.com/wting/rust.vim.git
