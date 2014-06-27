@@ -1,4 +1,5 @@
 alias reload!='. ~/.zshrc'
+alias vi='vim'
 
 # Global aliases (don't need to be at the beginning of the command line)
 alias -g L='|less'
