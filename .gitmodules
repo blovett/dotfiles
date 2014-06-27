@@ -16,3 +16,9 @@
 [submodule "vim/vim.symlink/bundle/vim-rust"]
 	path = vim/vim.symlink/bundle/vim-rust
 	url = https://github.com/wting/rust.vim.git
+[submodule "vim/vim.symlink/bundle/vim-fugitive"]
+	path = vim/vim.symlink/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "vim/vim.symlink/bundle/vim-airline"]
+	path = vim/vim.symlink/bundle/vim-airline
+	url = https://github.com/bling/vim-airline
