@@ -7,3 +7,5 @@
 	helper = cache --timeout=7200
 [push]
 	default = simple
+[include]
+	path = ~/.gitconfig.local
