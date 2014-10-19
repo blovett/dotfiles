@@ -22,3 +22,6 @@
 [submodule "vim/vim.symlink/bundle/vim-airline"]
 	path = vim/vim.symlink/bundle/vim-airline
 	url = https://github.com/bling/vim-airline
+[submodule "vim/vim.symlink/bundle/vim-snipmate"]
+	path = vim/vim.symlink/bundle/vim-snipmate
+	url = https://github.com/msanders/snipmate.vim.git
