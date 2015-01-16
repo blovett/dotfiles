@@ -142,6 +142,6 @@ cabbr Q q
 execute pathogen#infect()
 
 colorscheme pencil
-"set background=dark
+set background=dark
 
 " :w !sudo tee % 
