@@ -44,8 +44,8 @@ syntax on					" and enable syntax highlighting
 
 " don't pollute directories with swap files, keep them in one place
 silent !mkdir -p ~/.vim/{backup,swp}/
-set backupdir=~/.vim/backup//
-set directory=~/.vim/swp//
+set backupdir=~/.vim/backup/
+set directory=~/.vim/swp/
 
 " file type-specific settings
 
