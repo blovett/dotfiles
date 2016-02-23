@@ -144,4 +144,8 @@ execute pathogen#infect()
 colorscheme pencil
 "set background=dark
 
+if filereadable(expand("$HOME/.vimrc_local"))
+	source ~/.vimrc_local
+endif
+
 " :w !sudo tee % 
