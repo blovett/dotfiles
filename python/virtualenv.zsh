@@ -1,5 +1,1 @@
-# python virtualenv
-export WORKON_HOME=$HOME/.python-virtualenv
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
-    source /usr/local/bin/virtualenvwrapper.sh
-fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
