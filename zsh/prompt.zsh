@@ -9,10 +9,6 @@ else
   git="/usr/bin/git"
 fi
 
-git_branch() {
-  echo $($git symbolic-ref HEAD 2>/dev/null | awk -F/ {'print $NF'})
-}
-
 git_dirty() {
 	if $( ! $git status -s &>/dev/null); then
 		echo ""
