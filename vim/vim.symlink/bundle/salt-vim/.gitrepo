@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/saltstack/salt-vim.git
+	branch = master
+	commit = 5b15d379fbcbb84f82c6a345abc08cea9d374be9
+	parent = 5a219e9598917bbf926a22be9ca52a265ab50ef8
+	cmdver = 0.3.0

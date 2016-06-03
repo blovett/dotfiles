@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/tpope/vim-sensible.git
+	branch = master
+	commit = 9e91be7e0fb42949831fe3161ef583363648aa58
+	parent = 02fc5af35a28a1e8d2938be5241504d7eb934e80
+	cmdver = 0.3.0

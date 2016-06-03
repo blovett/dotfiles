@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/reedes/vim-colors-pencil.git
+	branch = master
+	commit = 645c77db4ddeca0fbd32504f4fc62953428b36ad
+	parent = 2d9c2488f18cc2fb715c5d6ca09214cc76bfb91c
+	cmdver = 0.3.0
