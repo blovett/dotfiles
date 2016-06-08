@@ -39,34 +39,6 @@ need_push () {
   fi
 }
 
-rb_prompt(){
-  if (( $+commands[rbenv] ))
-  then
-	  echo "%{$fg_bold[yellow]%}$(rbenv version | awk '{print $1}')%{$reset_color%}"
-	else
-	  echo ""
-  fi
-}
-
-# This keeps the number of todos always available the right hand side of my
-# command line. I filter it to only count those tagged as "+next", so it's more
-# of a motivation to clear out the list.
-todo(){
-  if (( $+commands[todo.sh] ))
-  then
-    num=$(echo $(todo.sh ls +next | wc -l))
-    let todos=num-2
-    if [ $todos != 0 ]
-    then
-      echo "$todos"
-    else
-      echo ""
-    fi
-  else
-    echo ""
-  fi
-}
-
 PROMPT='%55<...<%~$(git_dirty)$(need_push)$(vc_prompt_char)%# '
 if [ -n "$SSH_CONNECTION" ]; then
   PROMPT="%m ${PROMPT}"
@@ -78,32 +50,6 @@ function vc_prompt_char() {
 	#echo '○'
 	echo ''
 }
-
-function battery_charge() {
-	bclrf=/tmp/batcharge-last-run-$$
-
-	[ ! -f $bclrf ] && date +%s > $bclrf
-	LAST_RUN_TIME=$(< $bclrf)
-
-	NOW=$(date +%s)
-	DELTA=$(( $NOW - $LAST_RUN_TIME ))
-
-	bcrf=/tmp/batcharge_results-$$
-	if [ ! -f $bcrf ]; then
-		$ZSH/bin/batcharge.py > $bcrf
-	elif [ $DELTA -ge 120 ]; then
-		$ZSH/bin/batcharge.py > $bcrf
-		date +%s > $bclrf
-	fi
-
-	echo $(<$bcrf)
-}
-
-#OS=$(uname -s)
-#if [ x"$OS" = x"Darwin" ]
-#then
-#	export RPROMPT='$(battery_charge)'
-#fi
 
 precmd() {
   title "zsh" "%m" "%55<...<%~"

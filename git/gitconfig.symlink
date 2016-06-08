@@ -11,3 +11,4 @@
 	path = ~/.gitconfig.local
 [core]
 	excludesfile = ~/.gitignore
+	pager = less -FRX
