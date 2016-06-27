@@ -6,6 +6,9 @@ bind-key C-d detach-client
 # increase history
 set -g history-limit 100000
 
+# disable window resizing for the smallest window
+setw -g aggressive-resize off
+
 # disable watching
 setw -g monitor-activity off
 set -g visual-activity off
@@ -30,3 +33,10 @@ bind-key -r L resize-pane -R
 # titles
 #set -g set-titles on
 #set -g set-titles-string '[#S:#I #H] #W' # use screen title
+
+set-option -g status-utf8 on
+set-option -g status-justify right
+set-option -g status-bg black # colour213 # pink
+set-option -g status-fg cyan
+set-option -g status-interval 5
+set-option -g status-left-length 30
