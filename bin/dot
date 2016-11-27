@@ -8,9 +8,9 @@
 DIRNAME="$(dirname $0)"
 
 # Set OS X defaults
-if [ -x "$DIRNAME/../osx/set-defaults.sh" ]; then
-    $DIRNAME/../osx/set-defaults.sh
-fi
+#if [ -x "$DIRNAME/../osx/set-defaults.sh" ]; then
+#    $DIRNAME/../osx/set-defaults.sh
+#fi
 
 # Upgrade homebrew
 brew update
