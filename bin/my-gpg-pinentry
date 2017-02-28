@@ -1,0 +1,6 @@
+#!/bin/sh
+
+os="$(uname -s)"
+if [[ "$os" = "Darwin" ]]; then
+	exec /usr/local/bin/pinentry-mac "$@"
+fi
