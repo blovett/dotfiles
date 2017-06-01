@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/hashivim/vim-terraform
+	branch = master
+	commit = e0ed35d4dedb8bcb07b5920b875741a3e77703d3
+	parent = 9bfd64bf50ad0a74aedb49aa0848c3d0e3065369
+	cmdver = 0.3.0
