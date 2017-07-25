@@ -1,5 +1,7 @@
 alias reload!='. ~/.zshrc'
-alias vi='vim'
+if (( $+commands[vim] )); then
+	alias vi='vim'
+fi
 
 # Global aliases (don't need to be at the beginning of the command line)
 alias -g L='|less'
