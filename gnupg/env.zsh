@@ -1,9 +1,7 @@
-if [[ -f "${HOME}/.gpg-agent-info" ]]; then
-	. "${HOME}/.gpg-agent-info"
+export GPG_TTY="$(tty)"
+eval "$(gpg-agent --daemon 2>/dev/null)"
+unset SSH_AGENT_PID
+if [[ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]]; then
+	export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 fi
 
-if [[ -S "${GPG_AGENT_INFO%%:*}" ]]; then
-	export GPG_AGENT_INFO
-else
-	eval $( gpg-agent --daemon --write-env-file "${HOME}/.gpg-agent-info" )
-fi

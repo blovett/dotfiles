@@ -5,6 +5,11 @@
 
 "set runtimepath=~/.dotfiles/vim,$VIM,$VIMRUNTIME
 
+set nocompatible	" this is vim, not vi
+filetype on
+filetype indent on
+filetype plugin on
+
 " defaults for everything
 let c_minlines=500
 set backspace=indent,eol,start
