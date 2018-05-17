@@ -12,3 +12,7 @@
 [core]
 	excludesfile = ~/.gitignore
 	pager = less -FRX
+[include]
+	path = ~/.gitconfig-local
+[tag]
+	sort = version:refname
