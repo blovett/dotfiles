@@ -157,4 +157,6 @@ if filereadable(expand("$HOME/.vimrc_local"))
 	source ~/.vimrc_local
 endif
 
+let g:terraform_fmt_on_save=1
+
 " :w !sudo tee % 
