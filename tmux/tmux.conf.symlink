@@ -1,5 +1,5 @@
-set -g prefix C-a
-bind-key C-a last-window
+#set -g prefix C-a
+bind-key C-b last-window
 bind-key C-c new-window
 bind-key C-d detach-client
 
@@ -15,6 +15,9 @@ set -g visual-activity off
 
 # reload conf
 bind-key r source-file ~/.tmux.conf\; display "Reloaded!"
+
+# toggle mouse mode
+bind m set -g mouse\; display "mouse mode #{?mouse,on,off}"
 
 # window splitting
 bind-key | split-window -h
@@ -34,7 +37,7 @@ bind-key -r L resize-pane -R
 #set -g set-titles on
 #set -g set-titles-string '[#S:#I #H] #W' # use screen title
 
-set-option -g status-utf8 on
+#set-option -g status-utf8 on
 set-option -g status-justify right
 set-option -g status-bg black # colour213 # pink
 set-option -g status-fg cyan
