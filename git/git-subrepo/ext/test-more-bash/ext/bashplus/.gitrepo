@@ -4,8 +4,8 @@
 ; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
 ;
 [subrepo]
-	remote = https://github.com/ingydotnet/git-subrepo.git
+	remote = git@github.com:ingydotnet/bashplus.git
 	branch = master
-	commit = a7ee886e0260e847dea6240eaa6278fb2f23be8a
-	parent = bd083fc9bda548fb356472c701f6d19e639f0c78
+	commit = d9183af6f46946fabdef1dd8f37824c042a378f8
+	parent = 05a1bddbe237bbf2c390048c80ca70d4f66c6a37
 	cmdver = 0.3.0
