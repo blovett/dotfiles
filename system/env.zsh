@@ -1,3 +1,5 @@
 export PAGER=less
 export LESS="-cex3MR"
-export EDITOR=vim
+if (( $+commands[vim] )); then
+	export EDITOR=vim
+fi

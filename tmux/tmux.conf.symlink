@@ -43,3 +43,8 @@ set-option -g status-bg black # colour213 # pink
 set-option -g status-fg cyan
 set-option -g status-interval 5
 set-option -g status-left-length 30
+
+# enable mouse scrolling
+set -g mouse on
+# to enable mouse scroll, see https://github.com/tmux/tmux/issues/145#issuecomment-150736967
+bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'copy-mode -e'"
